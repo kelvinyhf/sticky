@@ -13,12 +13,12 @@ config_version=5
 config/name="Sticky"
 run/main_scene="uid://cdug8jkk2clv0"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://d3pth36qhoryq"
 
 [display]
 
-window/size/viewport_width=200
-window/size/viewport_height=200
+window/size/viewport_width=96
+window/size/viewport_height=96
 window/size/borderless=true
 window/size/always_on_top=true
 window/size/transparent=true
