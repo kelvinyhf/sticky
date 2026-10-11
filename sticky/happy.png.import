@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bggumfto5hn20"
-path="res://.godot/imported/sticky-sad.png-ababfb0b6d2668548bd3ae515de01722.ctex"
+uid="uid://egvth2ck7mpq"
+path="res://.godot/imported/happy.png-42cfe61db40e4bd2651e94236843a1e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sticky-sad.png"
-dest_files=["res://.godot/imported/sticky-sad.png-ababfb0b6d2668548bd3ae515de01722.ctex"]
+source_file="res://sticky/happy.png"
+dest_files=["res://.godot/imported/happy.png-42cfe61db40e4bd2651e94236843a1e2.ctex"]
 
 [params]
 

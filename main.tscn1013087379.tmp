@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cdug8jkk2clv0"]
+
+[ext_resource type="Script" uid="uid://dg0vvxjunuvsf" path="res://sticky.gd" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://bxisdagjq5lyw" path="res://sticky/default.png" id="2_0xm2m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_15786"]
+size = Vector2(64, 64)
+
+[node name="Node2D" type="Node2D" unique_id=130422193]
+position = Vector2(32, 32)
+script = ExtResource("1_0xm2m")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1571436637]
+texture = ExtResource("2_0xm2m")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1582321257]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1189268651]
+shape = SubResource("RectangleShape2D_15786")

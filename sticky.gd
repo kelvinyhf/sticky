@@ -1,8 +1,8 @@
 extends Node2D
 
-var tex_normal = preload("res://sticky.png")
-var tex_blink = preload("res://sticky-blink.png")
-var tex_happy = preload("res://sticky-happy.png")
+var tex_normal = preload("res://sticky/default.png")
+var tex_blink = preload("res://sticky/blink.png")
+var tex_happy = preload("res://sticky/happy.png")
 var is_hovering = false
 
 var speed = 0
@@ -49,6 +49,10 @@ func _physics_process(delta: float) -> void:
 
 func _on_area_input(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if event.double_click:
+			is_dragging = false
+			OS.shell_open("https://gist.github.com/")
+			return
 		if event.pressed:
 			is_dragging = true
 			var mouse_pos = Vector2(DisplayServer.mouse_get_position())
